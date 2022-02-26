@@ -50,7 +50,8 @@ class Events
         "beforeReload",
         "afterReload",
         "message",
-        "request"
+        "request",
+        "open"
     ];
 
     protected $events = [];
