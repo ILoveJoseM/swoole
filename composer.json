@@ -1,0 +1,41 @@
+{
+  "name": "jose-chan/swoole",
+  "description": "",
+  "keywords": ["swoole"],
+  "authors": [{
+    "name": "JoseChan",
+    "email": "524233828@qq.com"
+  }],
+  "license": "MIT",
+  "type": "library",
+  "require": {
+    "php": "^7.2",
+    "ext-swoole": "^4.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "JoseChan\\Swoole\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "dont-discover": [
+      ],
+      "providers": [
+        "JoseChan\\Swoole\\Providers\\ServerProvider"
+      ]
+    }
+  },
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "optimize-autoloader": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
