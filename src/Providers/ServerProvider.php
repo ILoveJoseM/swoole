@@ -12,6 +12,10 @@ use Illuminate\Support\ServiceProvider;
 use JoseChan\Swoole\Utils\Listener;
 use JoseChan\Swoole\Utils\Options;
 
+/**
+ * Class ServerProvider
+ * @package JoseChan\Swoole\Providers
+ */
 class ServerProvider extends ServiceProvider
 {
     public function boot()

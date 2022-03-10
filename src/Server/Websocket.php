@@ -14,6 +14,11 @@ use JoseChan\Swoole\Utils\Traits\WebSocketRequiredTrait;
 use JoseChan\Swoole\Utils\WebsocketServer;
 use Swoole\Server;
 
+/**
+ * websocket服务器
+ * Class Websocket
+ * @package JoseChan\Swoole
+ */
 class Websocket extends WebsocketServer
 {
     use WebSocketRequiredTrait;

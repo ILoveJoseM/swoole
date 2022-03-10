@@ -14,6 +14,11 @@ use JoseChan\Swoole\Utils\Traits\ServerRequiredTrait;
 use JoseChan\Swoole\Utils\Traits\ServerTrait;
 use JoseChan\Swoole\Utils\Traits\TaskTrait;
 
+/**
+ * tcp服务器
+ * Class Server
+ * @package JoseChan\Swoole\Server
+ */
 class Server extends AbstractServer
 {
     use ServerRequiredTrait;

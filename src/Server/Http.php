@@ -14,6 +14,11 @@ use JoseChan\Swoole\Utils\Traits\HttpServerRequiredTrait;
 use JoseChan\Swoole\Utils\Traits\ServerTrait;
 use JoseChan\Swoole\Utils\Traits\TaskTrait;
 
+/**
+ * http服务器
+ * Class Http
+ * @package JoseChan\Swoole\Server
+ */
 class Http extends HttpServer
 {
     use HttpServerRequiredTrait;

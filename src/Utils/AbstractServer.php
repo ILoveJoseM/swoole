@@ -10,6 +10,11 @@ namespace JoseChan\Swoole\Utils;
 
 use Swoole\Server;
 
+/**
+ * 服务器抽象
+ * Class AbstractServer
+ * @package JoseChan\Swoole\Utils
+ */
 abstract class AbstractServer
 {
     /** @var Server $server */
@@ -25,7 +30,7 @@ abstract class AbstractServer
     protected $event;
 
     /**
-     * Websocket constructor.
+     * constructor.
      * @param Options $options
      * @param Listener $listener
      * @param Events $event
@@ -37,6 +42,10 @@ abstract class AbstractServer
         $this->event = $event;
     }
 
+    /**
+     * 创建服务器对象，不同服务可自行重写
+     * @param Listener $listener
+     */
     protected function setServer(Listener $listener)
     {
         $this->server = new Server($listener->host(), $listener->port());
@@ -122,6 +131,7 @@ abstract class AbstractServer
     }
 
     /**
+     * 处理回调函数绑定
      * @return $this
      * @throws \Exception
      */

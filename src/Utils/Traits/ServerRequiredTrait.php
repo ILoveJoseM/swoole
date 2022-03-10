@@ -11,6 +11,11 @@ namespace JoseChan\Swoole\Utils\Traits;
 
 use Swoole\Server;
 
+/**
+ * tcp服务器必须实现的回调函数
+ * Trait ServerRequiredTrait
+ * @package JoseChan\Swoole\Utils\Traits
+ */
 trait ServerRequiredTrait
 {
     /**
