@@ -3,7 +3,7 @@
 ## 安装
 
 ````ssh
-composer require "jose-chan/swoole" -vvv
+composer require "jose-chan/swoole-server" -vvv
 ````
 
 ## laravel发布
