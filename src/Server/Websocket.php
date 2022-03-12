@@ -12,7 +12,6 @@ use JoseChan\Swoole\Utils\Traits\ServerTrait;
 use JoseChan\Swoole\Utils\Traits\TaskTrait;
 use JoseChan\Swoole\Utils\Traits\WebSocketRequiredTrait;
 use JoseChan\Swoole\Utils\WebsocketServer;
-use Swoole\Server;
 
 /**
  * websocket服务器
